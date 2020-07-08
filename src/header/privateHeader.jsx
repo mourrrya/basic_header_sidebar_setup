@@ -103,9 +103,9 @@ export default function PrivateHeader({ component: Component, ...rest }) {
               </Menu.Item>
             );
           })}
-          <Menu.Item key="" onClick={handleLogout}>
+          {/* <Menu.Item key="" onClick={handleLogout}>
             <span>Logout</span>
-          </Menu.Item>
+          </Menu.Item> */}
         </Menu>
       </Sider>
 
