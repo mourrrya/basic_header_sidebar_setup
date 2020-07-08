@@ -4,19 +4,19 @@ import cookie from "js-cookie";
 import React, { useState } from "react";
 import { Link, Route, useHistory, useLocation } from "react-router-dom";
 import useWindowDimensions from "../Hooks/WindowDimensions";
+import homeIcon from "../assets/img/sideBarIcon/homeIcon.svg";
+import campusMarketingIcon from "../assets/img/sideBarIcon/campusMarketingIcon.svg";
+import editProfileIcon from "../assets/img/sideBarIcon/editProfileIcon.svg";
+import gigIcon from "../assets/img/sideBarIcon/gigIcon.svg";
+import logoutIcon from "../assets/img/sideBarIcon/logoutIcon.svg";
 
 const { Header, Sider, Content } = Layout;
 
 const projectMainLink = [
-  { name: "Dashboard", link: "/dashboard" },
-  { name: "Gigs", link: "/gigs" },
-  { name: "Internships", link: "/internships" },
-  { name: "Campus Marketing", link: "/campus_marketing" },
-  { name: "Student Offers", link: "student_offers" },
-  { name: "Student Verification", link: "student_verification" },
-  { name: "Support", link: "support" },
-  { name: "Payments", link: "payments" },
-  { name: "Notifications", link: "notifications" },
+  { name: "Dashboard", link: "/dashboard", img: homeIcon },
+  { name: "Gigs", link: "/gigs", img: campusMarketingIcon },
+  { name: "Internships", link: "/internships", img: editProfileIcon },
+  { name: "Campus Marketing", link: "/campus_marketing", img: gigIcon },
 ];
 
 const headerData = {
@@ -98,14 +98,20 @@ export default function PrivateHeader({ component: Component, ...rest }) {
             return (
               <Menu.Item key={index}>
                 <Link to={navBarLink.link}>
+                  <span className="anticon">
+                    <img src={navBarLink.img} alt="" className="" />
+                  </span>
                   <span>{navBarLink.name}</span>
                 </Link>
               </Menu.Item>
             );
           })}
-          {/* <Menu.Item key="" onClick={handleLogout}>
+          <Menu.Item key="" onClick={handleLogout}>
+            <span className="anticon">
+              <img src={logoutIcon} alt="" className="" />
+            </span>
             <span>Logout</span>
-          </Menu.Item> */}
+          </Menu.Item>
         </Menu>
       </Sider>
 

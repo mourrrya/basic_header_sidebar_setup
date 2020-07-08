@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.7" height="17.7" viewBox="0 0 17.7 17.7">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:none;stroke:#d3d3d3;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="prefix__Icon_feather-log-out" data-name="Icon feather-log-out" transform="translate(.75 .75)" style="opacity:.6">
+        <path id="prefix__Path_51" d="M4.5 20.7h3.6a1.8 1.8 0 0 0 1.8-1.8V6.3a1.8 1.8 0 0 0-1.8-1.8H4.5" class="prefix__cls-2" data-name="Path 51" transform="translate(6.3 -4.5)"/>
+        <path id="prefix__Path_52" d="M28.5 19.5L24 15l4.5-4.5" class="prefix__cls-2" data-name="Path 52" transform="translate(-24 -6.9)"/>
+        <path id="prefix__Path_53" d="M13.5 18h10.8" class="prefix__cls-2" data-name="Path 53" transform="translate(-13.5 -9.9)"/>
+    </g>
+</svg>
