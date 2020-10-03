@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function DashBoard() {
+export default function StartTest() {
   return (
     <div className="">
-      <h1>DashBoard</h1>
+      <h1>Start Test</h1>
     </div>
   );
 }

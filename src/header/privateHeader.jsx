@@ -14,22 +14,21 @@ const { Header, Sider, Content } = Layout;
 
 const projectMainLink = [
   { name: "Dashboard", link: "/dashboard", img: homeIcon },
-  { name: "Gigs", link: "/gigs", img: campusMarketingIcon },
-  { name: "Internships", link: "/internships", img: editProfileIcon },
-  { name: "Campus Marketing", link: "/campus_marketing", img: gigIcon },
+  { name: "Start Test", link: "/startTest", img: editProfileIcon },
+  { name: "Survey", link: "/survey", img: gigIcon },
 ];
 
 const headerData = {
-  firstName: "Shivam",
-  lastName: "Malhotra",
-  companyName: "www.pracify.com",
-  email: "shivam@gmail.com",
+  firstName: "Anil",
+  lastName: "Kumar",
+  companyName: "www.anil.com",
+  email: "anil@gmail.com",
 };
 
 export default function PrivateHeader({ component: Component, ...rest }) {
   const history = useHistory();
   const location = useLocation();
-  const { width, height } = useWindowDimensions();
+  const { width } = useWindowDimensions();
   const [collapsed, setCollapsed] = useState(width > 768 ? false : true);
 
   const handleToggle = () => {
@@ -44,29 +43,14 @@ export default function PrivateHeader({ component: Component, ...rest }) {
   const selectedKey = () => {
     console.log(location.pathname.toString().split("/")[1]);
     switch (location.pathname.toString().split("/")[1]) {
-      case "gigs": {
+      case "startTest": {
         return ["1"];
       }
       case "internships": {
         return ["2"];
       }
-      case "campus_marketing": {
+      case "survey": {
         return ["3"];
-      }
-      case "student_offers": {
-        return ["4"];
-      }
-      case "student_verification": {
-        return ["5"];
-      }
-      case "support": {
-        return ["6"];
-      }
-      case "payments": {
-        return ["7"];
-      }
-      case "notifications": {
-        return ["8"];
       }
       default: {
         return ["0"];

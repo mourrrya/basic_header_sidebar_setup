@@ -13,7 +13,7 @@ export default function Login() {
     <div className="App">
       <header className="App-header">
         <div className="">
-          <h1>Admin Login</h1>
+          <h1>Student Login</h1>
           <Button onClick={handleLogin}>Login</Button>
         </div>
       </header>

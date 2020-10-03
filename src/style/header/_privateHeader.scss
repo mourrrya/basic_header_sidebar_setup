@@ -43,6 +43,10 @@
       .ant-menu {
         background-color: #fff;
         .ant-menu-item {
+          &:last-child{
+            position: absolute;
+            bottom: 20px;
+          }
           span {
             font-size: 16px;
             line-height: 1.38;
@@ -56,6 +60,7 @@
             }
           }
         }
+        
       }
       .ant-menu-item.ant-menu-item-selected {
         background-color: #eff6fe;
